@@ -4,15 +4,12 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/master/LICENSE)
  */
 
-body {
-  padding-top: 54px;
+
+
+card-properties {
+  max-width: 70px;
 }
 
-@media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
-}
 
 header.masthead {
   background: url("../vendor/images/bg.jpg") no-repeat center center scroll;
@@ -33,3 +30,36 @@ header.masthead>.overlay {
     padding: 10rem 0;
   }
 }
+
+.navbar {
+    width:100%;
+    background:none !important;
+
+    @media(max-width: 34em) {
+        background: black !important;
+    }
+
+    .navbar-toggler {
+        cursor:pointer;
+        outline:0;
+    }
+
+    .nav-link {
+        text-transform:uppercase;
+        font-weight:bold;
+    }
+
+    .nav-item {
+        padding: 0 1rem;
+
+        @media(max-width: 34em) {
+            padding: 0;
+        }
+
+        .nav-link {
+            @media(max-width: 34em) {
+                font-weight:normal;
+                color:#000 !important;
+            }
+        }
+   
