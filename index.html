@@ -49,7 +49,7 @@ document.getElementById("atc").onclick = function(){
     ttq.identify({
     email: document.getElementById("emailInput").value,
 })
-    ttq.track('CompletePayment',{  
+    ttq.track('AddToCart',{  
     content_id: '301',
     quantity: 1,
     price: 8,
@@ -60,7 +60,7 @@ document.getElementById("vc").onclick = function(){
     ttq.identify({
     email: document.getElementById("emailInput").value,
 })
-    ttq.track('CompletePayment',{  
+    ttq.track('ViewContent',{  
     content_id: '301',
     quantity: 1,
     price: 8,
