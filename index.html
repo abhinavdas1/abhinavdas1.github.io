@@ -45,6 +45,28 @@ document.getElementById("cpButton").onclick = function(){
     value: 9.2,
     currency: 'USD',})
  }
+document.getElementById("atc").onclick = function(){
+    ttq.identify({
+    email: document.getElementById("emailInput").value,
+})
+    ttq.track('CompletePayment',{  
+    content_id: '301',
+    quantity: 1,
+    price: 8,
+    value: 9.2,
+    currency: 'USD',})
+ }
+document.getElementById("vc").onclick = function(){
+    ttq.identify({
+    email: document.getElementById("emailInput").value,
+})
+    ttq.track('CompletePayment',{  
+    content_id: '301',
+    quantity: 1,
+    price: 8,
+    value: 9.2,
+    currency: 'USD',})
+ }
 </script>
 
 
