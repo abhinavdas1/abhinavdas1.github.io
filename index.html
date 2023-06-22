@@ -30,6 +30,9 @@
 	
 <H2>Below is a button trigger viewContent manually</H1>
 <button id="vc">View Content</button>	
+
+<H2>Below is a button trigger placeAnOrder manually</H1>
+<button id="pao">Place an Order</button>	
   
 <H2>Redirect</H2>
 <a href="./GTM.html">Go to GOOGLE TAG MANAGER SETUP</a>
@@ -61,6 +64,18 @@ document.getElementById("vc").onclick = function(){
     email: document.getElementById("emailInput").value,
 })
     ttq.track('ViewContent',{  
+    content_id: '301',
+    quantity: 1,
+    price: 8,
+    value: 9.2,
+    currency: 'USD',})
+ }
+
+document.getElementById("pao").onclick = function(){
+    ttq.identify({
+    email: document.getElementById("emailInput").value,
+})
+    ttq.track('PlaceAnOrder',{  
     content_id: '301',
     quantity: 1,
     price: 8,
